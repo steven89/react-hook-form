@@ -3,7 +3,7 @@ import React from 'react';
 import omit from './utils/omit';
 import { FieldValues, FormProviderProps, UseFormReturn } from './types';
 
-const HookFormContext = React.createContext<UseFormReturn | null>(null);
+export const HookFormContext = React.createContext<UseFormReturn | null>(null);
 
 /**
  * This custom hook allows you to access the form context. useFormContext is intended to be used in deeply nested structures, where it would become inconvenient to pass the context as a prop. To be used with {@link FormProvider}.
